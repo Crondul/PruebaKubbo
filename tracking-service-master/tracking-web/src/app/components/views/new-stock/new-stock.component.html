@@ -1,0 +1,39 @@
+<h1><i class="fa fa-arrow-left" (click)="goBack()"></i>{{ 'addStock.title' | translate}}</h1>
+<mat-divider></mat-divider>
+<form [formGroup]="formGroup" (ngSubmit)="addStock(formGroup.value)">
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'addStock.quantity' | translate}} </mat-label>
+            <input matInput id="quantity" type="text" formControlName="quantity">
+            <mat-error *ngIf="quantity.invalid">{{ 'addStock.error.quantity' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'addStock.status' | translate}}</mat-label>
+            <mat-select formControlName="status">
+                <mat-option value="Available"> Available </mat-option>
+                <mat-option value="Damaged"> Damaged </mat-option>
+                <mat-option value="Sold"> Sold </mat-option>
+            </mat-select>
+            <mat-error *ngIf="status.invalid">{{ 'addStock.error.status' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'addStock.warehouse' | translate}}</mat-label>
+            <mat-select formControlName="warehouse">
+                <mat-option *ngFor="let warehouse of warehouses" [value]="warehouse._id">
+                    {{warehouse._name}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="warehouse.invalid">{{ 'addStock.error.warehouse' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <button mat-raised-button color="accent" type="submit">Add</button>
+
+</form>

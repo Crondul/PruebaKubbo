@@ -1,0 +1,43 @@
+{
+  "products": {
+    "id": "Id",
+    "name": "Name",
+    "sku": "SKU",
+    "barcode": "Barcode",
+    "image": "Image Url",
+    "price": "Price",
+    "seeDetails": "See details",
+    "addNew": "Add new product",
+    "addButton": "Add",
+    "error":  {
+      "name": "Please add a name",
+      "sku": "Please add an SKU",
+      "barcode": "Please add a barcode",
+      "image": "Please add an Image Url",
+      "price": "Please add a price"
+    }
+  },
+  "productDetails": {
+    "sku": "SKU",
+    "barcode": "Barcode",
+    "price": "Price",
+    "addNew": "Add new Stock Product",
+    "addButton": "Add",
+    "idStock": "Id",
+    "quantity": "Quantity",
+    "status": "Status",
+    "warehouse": "Warehouse",
+    "city": "City"
+  },
+  "addStock": {
+    "title": "Add a new stock",
+    "quantity": "Product quantity",
+    "status": "Product status",
+    "warehouse": "Warehouse",
+    "error": {
+      "quantity": "Please add a quantity",
+      "status": "Please select an status",
+      "warehouse": "Please select a warehouse"
+    }
+  }
+}

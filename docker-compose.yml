@@ -1,0 +1,32 @@
+services:
+    kubbo-mysql:
+        image: kubbo-mysql
+        ports:
+            - "3306:3306"
+        environment: 
+            - MYSQL_DATABASE=kubbo-test
+            - MYSQL_ROOT_PASSWORD=Alicante20!
+    product-service:
+        image: product-service:latest
+        ports:
+            - "8001:8001"
+        links:
+            - "kubbo-mysql"
+    stock-service:
+        image: stock-service:latest
+        ports:
+            - "8002:8002"
+        links:
+            - "warehouse-service"
+    warehouse-service:
+        image: warehouse-service:latest
+        ports:
+            - "8003:8003"
+    tracking-service:
+        image: tracking-service
+        ports:
+            - "8000:8000"
+        links:
+            - "product-service"
+            - "stock-service"
+            - "warehouse-service"

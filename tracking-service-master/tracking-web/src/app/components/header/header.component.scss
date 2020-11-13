@@ -1,0 +1,14 @@
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    height: 54px;
+}
+
+.image_container {
+    padding: 0.5em;
+}
+
+.select {
+    padding: 1em;
+}

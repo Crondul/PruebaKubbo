@@ -1,0 +1,24 @@
+h1 {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    font-size: 1.8rem;
+    padding: 1em;
+    margin: 0;
+
+    i {
+        margin-right: 1em;
+        cursor: pointer;
+    }
+}
+
+form {
+    width: 100%;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 2em;
+}
+.mat-form-field-outline {
+    color: var(--primary-color);
+}

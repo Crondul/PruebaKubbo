@@ -1,0 +1,45 @@
+<form [formGroup]="formGroup" (ngSubmit)="addProduct(formGroup.value)">
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'products.name' | translate}}</mat-label>
+            <input matInput id="name" type="text" formControlName="name">
+            <mat-error *ngIf="name.invalid">{{ 'products.error.name' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'products.sku' | translate}}</mat-label>
+            <input matInput id="sku" type="text" formControlName="sku">
+            <mat-error *ngIf="sku.invalid">{{ 'products.error.sku' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'products.barcode' | translate}}</mat-label>
+            <input matInput id="barcode" type="text" formControlName="barcode">
+            <mat-error *ngIf="barcode.invalid">{{ 'products.error.barcode' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'products.price' | translate}}</mat-label>
+            <input matInput id="price" type="text" formControlName="price">
+            <mat-error *ngIf="price.invalid">{{ 'products.error.price' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>{{ 'products.image' | translate}}</mat-label>
+            <input matInput id="image" type="text" formControlName="image">
+            <mat-error *ngIf="image.invalid">{{ 'products.error.image' | translate}}</mat-error>
+        </mat-form-field>
+    </p>
+
+    <button mat-raised-button color="accent" type="submit">{{ 'products.addButton' | translate}}</button>
+
+</form>

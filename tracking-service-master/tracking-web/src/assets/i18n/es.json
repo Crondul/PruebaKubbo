@@ -1,0 +1,42 @@
+{
+  "products": {
+    "id": "Id",
+    "name": "Nombre",
+    "sku": "SKU",
+    "barcode": "Cod Barras",
+    "image": "Url de la imagen",
+    "price": "Precio",
+    "seeDetails": "Ver detalles",
+    "addNew": "Añadir nuevo producto",
+    "addButton": "Añadir",
+    "error":  {
+      "name": "Por favor, añade un nombre",
+      "sku": "Por favor, añade un sku",
+      "barcode": "Por favor, añade un código de barras",
+      "image": "Por favor, añade una url de la imagen",
+      "price": "Por favor, añade un precio"
+    }
+  },
+  "productDetails": {
+    "sku": "SKU",
+    "barcode": "Código de Barras",
+    "price": "Precio",
+    "addNew": "Añadir un nuevo stock del producto",
+    "idStock": "Id",
+    "quantity": "Cantidad",
+    "status": "Estado",
+    "warehouse": "Almacén",
+    "city": "Ciudad"
+  },
+  "addStock": {
+    "title": "Añadir un nuevo Stock",
+    "quantity": "Cantidad del producto",
+    "status": "Estado del producto",
+    "warehouse": "Almacén",
+    "error": {
+      "quantity": "Por favor, añade una cantidad",
+      "status": "Por favor, selecciona un estado",
+      "warehouse": "Por favor, selecciona un almacén"
+    }
+  }
+}

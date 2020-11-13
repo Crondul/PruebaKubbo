@@ -1,0 +1,11 @@
+form {
+    width: 100%;
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 2em;
+
+    .mat-form-field-outline {
+        color: var(--primary-color);
+    }
+}

@@ -1,0 +1,62 @@
+mat-card {
+    background-color: #fff;
+    color: var(--primary-color);
+    margin: 1em;
+
+    mat-card-header {
+        i {
+            margin-right: 1em;
+            cursor: pointer;
+        }
+    }
+
+    mat-list-item {
+        color: var(--primary-color);
+    }
+
+    mat-card-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .imageContainer {
+        width: 25%;
+        padding: 2em;
+        box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+    }
+}
+
+
+
+mat-table {
+    width: 100%;
+    display: table;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 2em;
+
+    tr {
+        width: 100%;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+
+        th {
+            margin: auto;
+            border: none;
+        }
+
+        td {
+            margin: auto;
+            border: none;
+        }
+    }
+}
+
+mat-paginator {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background-color: var(--secondary-color);
+}

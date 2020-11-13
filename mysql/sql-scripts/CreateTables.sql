@@ -1,0 +1,25 @@
+CREATE TABLE product (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+name VARCHAR(100),
+sku VARCHAR(30),
+barcode VARCHAR(30),
+image VARCHAR(500),
+price VARCHAR(30),
+enabled boolean,
+PRIMARY KEY (id));
+
+CREATE TABLE warehouse (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+name VARCHAR(100),
+city VARCHAR(30),
+PRIMARY KEY (id));
+
+CREATE TABLE stock (
+id MEDIUMINT NOT NULL AUTO_INCREMENT,
+quantity INT,
+status VARCHAR(30),
+id_product MEDIUMINT NOT NULL,
+id_warehouse MEDIUMINT NOT NULL,
+PRIMARY KEY (id),
+FOREIGN KEY (id_product) REFERENCES product(id),
+FOREIGN KEY (id_warehouse) REFERENCES warehouse(id));

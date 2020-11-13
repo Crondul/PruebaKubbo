@@ -1,0 +1,16 @@
+@import '~@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+:root {
+    --primary-color: #005a87;
+    --secondary-color: #5CA6FA;
+    --background-color: #f2f4f5;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: var(--background-color);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

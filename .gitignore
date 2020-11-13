@@ -1,0 +1,10 @@
+/tracking-service-master/tracking-web/dist
+/tracking-service-master/tracking-web/node_modules
+/tracking-service-master/tracking-server/target
+/product-service-master/target
+/product-service-master/.mvn
+/stock-service-master/target
+/stock-service-master/.mvn
+/warehouse-service-master/target
+/warehouse-service-master/.mvn
+
